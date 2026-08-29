@@ -91,8 +91,6 @@ npx skills add 5iFish/cowork-recall-skill -g -a claude-code -y
 npx skills add 5iFish/cowork-recall-skill -g -a claude-code -a codex -a cursor
 ```
 
-> **ZCode 用户**：ZCode 原生支持 skills 生态，安装后直接用自然语言触发；也可以克隆本仓库后运行 `python skills/cowork-recall/scripts/install_skill.py` 链接安装到 `~/.agents/skills/`。
-
 ## 🛠️ 使用方法
 
 安装完成后，直接用自然语言对 AI 说：
@@ -123,9 +121,11 @@ npx skills add 5iFish/cowork-recall-skill -g -a claude-code -a codex -a cursor
 | WorkBuddy | `workbuddy` | WorkBuddy |
 | CodeBuddy | `codebuddy` | CodeBuddy |
 | Kimi Code | `kimi` | Kimi Code |
-| Trae | `trae` | Trae / Trae CN（经运行中的 Trae 本地服务只读获取） |
+| Trae | `trae` | Trae / Trae CN（**需 Trae 处于运行中**，经其本地服务只读获取） |
 
 来源默认 `auto` 自动检测；可用 `WORKSUMMARY_<X>_*` 系列环境变量覆盖各来源的数据位置。某来源数据不存在时如实降级，不影响其他来源。会话详情（detail）目前支持 zcode / claude / codex / trae，其余来源以检索摘要为准。
+
+> ⚠️ **Trae 特殊说明**：Trae / Trae CN 的会话**必须在 Trae 处于运行中时才能读取**——适配器通过连接运行中的 Trae 本地 ai-agent 服务来只读获取会话。查询 Trae 会话前，请先启动并保持 Trae / Trae CN 运行，否则该来源会被如实标记为不可用（其余来源不受影响）。
 
 ## 🔒 数据与隐私
 
