@@ -185,3 +185,7 @@ skills/cowork-recall/
 ## 📄 License
 
 [MIT](LICENSE)
+
+## 友情链接
+
+- [linux.do](https://linux.do/u/runtimexception/)
