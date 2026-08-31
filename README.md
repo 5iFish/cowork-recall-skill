@@ -46,12 +46,12 @@
 ```markdown
 # 工作总览（2026-08-20 ~ 2026-08-26）
 
-- atlas-web：完成登录重构方案讨论与第一期落地（claude + zcode）
+- 项目A：完成登录重构方案讨论与第一期落地（claude + zcode）
 - ZCodeProject：发布 cowork-recall 技能（zcode）
 
 # 分项目明细
 
-## atlas-web
+## 项目A
 [claude]  [08-25 14:20–16:05] 登录页重构方案讨论
 - 把登录重构拆成两期，先做会话过期
 - commit: `a1b2c3d 重构登录会话过期逻辑`
